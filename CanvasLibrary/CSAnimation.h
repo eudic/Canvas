@@ -55,7 +55,7 @@ extern NSString *const CSAnimationExceptionMethodNotImplemented;
 
 @interface CSAnimation : NSObject <CSAnimation>
 
-+ (void)registerClass:(Class)class forAnimationType:(CSAnimationType)animationType;
++ (void)registerClass:(Class)_class forAnimationType:(CSAnimationType)animationType;
 + (Class)classForAnimationType:(CSAnimationType)animationType;
 
 @end
