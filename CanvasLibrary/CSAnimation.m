@@ -32,8 +32,8 @@ static NSMutableDictionary *_animationClasses;
     [NSException raise:CSAnimationExceptionMethodNotImplemented format:@"+[%@ performAnimationOnView:duration:delay:] needed to be implemented", NSStringFromClass(self)];
 }
 
-+ (void)registerClass:(Class)class forAnimationType:(CSAnimationType)animationType {
-    [_animationClasses setObject:class forKey:animationType];
++ (void)registerClass:(Class)_class forAnimationType:(CSAnimationType)animationType {
+    [_animationClasses setObject:_class forKey:animationType];
 }
 
 + (Class)classForAnimationType:(CSAnimationType)animationType {
